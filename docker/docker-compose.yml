@@ -1,0 +1,9 @@
+version: '2'
+services:
+    swoole:
+        volumes:
+            - ../app:/root/app
+        build: ./app
+        hostname: app
+        ports:
+            - 8080:8080
